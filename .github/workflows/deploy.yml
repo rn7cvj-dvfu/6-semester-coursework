@@ -25,10 +25,9 @@ jobs:
 
       - name: Build web
         run: dart run build_runner build -d && dart run slang && flutter build web --release --base-href /6-semester-coursework/
-        working-directory: game
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: game/build/web
+          publish_dir: /build/web
