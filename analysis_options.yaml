@@ -1,0 +1,9 @@
+analyzer:
+  errors:
+    file_names: ignore
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    prefer_relative_imports: true
+    directives_ordering: true
